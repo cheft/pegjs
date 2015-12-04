@@ -66,9 +66,9 @@ ha 'html attribute'
     }
 
 bav 'boolean attribute value'
-    = "='" sqhav "'"
-    / '="' dqhav '"'
-    / '=""' / "=''"
+    = "=" __ "'" sqhav "'"
+    / '=' __ '"' dqhav '"'
+    / '=' __ '""' / "=" __ "''"
     / "="
     / ''
 
